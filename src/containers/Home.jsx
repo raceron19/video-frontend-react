@@ -10,24 +10,23 @@ import Search from '../components/Search'
 import '../assets/styles/App.scss'
 import useInitialState from '../hooks/useInitialState'
 
-const API = 'http://localhost:3001/initalState';
+const API = 'http://localhost:3000/initalState';
 
-const App = () => {
-    
+const Home = () => {
+
     const initialState = useInitialState(API);
     return (
         <div className="App">
-            <Header />
             <Search />
             {
                 initialState.mylist.length > 0 &&
                 <Categories title="My list">
                     <Carousel>
-                    {
-                        initialState.mylist.map(
-                            item => <CarouselItem key={item.id} {...item} />
-                        )
-                    }
+                        {
+                            initialState.mylist.map(
+                                item => <CarouselItem key={item.id} {...item} />
+                            )
+                        }
                     </Carousel>
                 </Categories>
             }
@@ -50,9 +49,8 @@ const App = () => {
                     }
                 </Carousel>
             </Categories>
-            <Footer />
         </div>
     )
 };
 
-export default App;
+export default Home;

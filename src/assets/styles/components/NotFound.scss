@@ -1,0 +1,22 @@
+.error {
+    background: linear-gradient(#21c08b, #8f57fd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+    width: 100%;
+    color: white;
+  }
+  
+  .error h1 {
+      font-size: 100px;
+      font-family: "Mulish", sans-serif;
+      margin-bottom: 15px;
+      margin-top: 10px;
+  }
+  
+  .error p {
+      font-size: 20px;
+      font-family: "Mulish", sans-serif;
+  }
