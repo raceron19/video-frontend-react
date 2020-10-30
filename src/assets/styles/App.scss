@@ -1,4 +1,42 @@
-body{
-    margin: 0;
-    background-color: blueviolet;
+@import "./Vars.scss";
+@import "./Media.scss";
+
+body {
+  margin: 0;
+  background-color: $main-color;
+  font-family: $theme-font;
+}
+.input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  height: 50px;
+  outline: none;
+  padding: 0px 20px;
+  width: 70%;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Mulish", sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 0px 10px;
+}
+
+::placeholder {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
